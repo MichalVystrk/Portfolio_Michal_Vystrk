@@ -1,0 +1,530 @@
+/* css */
+:root {
+    --first-color: #F8EDE3;
+    --second-color: #DFD3C3;
+    --third-color: #D0B8A8;
+    --fourth-color: #AB886D;
+    --navbar-color: #574b45a6;
+    --sixth-color: #705947;
+    --dark-text: #4e3a2b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    line-height: 1.6;
+    background-color: var(--third-color);
+    color: var(--first-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: oblique;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* navbar */
+#navbar {
+    background-color: var(--navbar-color);
+    display: flex;
+    justify-content: space-between;
+    color: var(--first-color);
+    align-items: center;
+    padding: 0.75rem;
+    letter-spacing: 1px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-weight: 800;
+    font-style: oblique;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+#navbar .right ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+    margin-right: 2rem;
+}
+
+#navbar .right li {
+    transition: 0.1s;
+
+}
+
+#navbar .right li:hover {
+    transform: scale(1.1);
+}
+
+#navbar .hamburger {
+    display: none;
+}
+
+#navbar .fas {
+    margin-right: 0.7rem;
+}
+
+
+
+/* uvod */
+#uvod {
+    background-image: url(../fotky/backgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+
+}
+
+#uvod .uvodniBlok {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--first-color);
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: oblique;
+    padding: 2rem;
+}
+
+#uvod button {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--fourth-color);
+    color: var(--first-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    transition: 0.4s ease;
+}
+
+#uvod button:hover {
+    background-color: var(--third-color);
+    color: var(--sixth-color);
+    transform: scale(1.1);
+}
+
+/* O mě */
+#oMe {
+    background-color: var(--third-color);
+    color: var(--dark-text);
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#oMe .popis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+#oMe .popis>div {
+    margin: 2rem;
+}
+
+#oMe img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+}
+
+#oMe .fotka {
+    margin: auto;
+}
+
+#oMe .oMeLevo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    max-width: 30vh;
+    min-width: 30vh;
+}
+
+#oMe .oMePravo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: justify;
+    flex-wrap: wrap;
+    max-width: 70vh;
+}
+
+#oMe .oMeLevo {
+    flex: 2;
+}
+
+#oMe .oMePravo {
+    flex: 5;
+}
+
+/* technika */
+#technika {
+    background-color: var(--fourth-color);
+    color: var(--first-color);
+    min-height: 70vh;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+#technika .technikaPopis {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+#technika img {
+    max-height: 17vw;
+    min-height: 17vw;
+
+}
+
+#technika .technikaPolozky {
+    transition: 0.4s ease;
+}
+
+#technika .technikaPolozky:hover {
+    transform: scale(1.1);
+}
+
+#technika .technikaPopis h4 {
+    margin: 2rem;
+}
+
+/* cenik */
+#tabulka {
+    background-color: var(--third-color);
+    min-height: 70vh;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tabulka table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 0 0 2rem 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#tabulka th,
+#tabulka td {
+    padding: 1rem;
+    border: 1px solid var(--sixth-color);
+    /* Lehké orámování buněk */
+}
+
+#tabulka th {
+    background-color: var(--sixth-color);
+    color: #E4E0E1;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Zvýraznění záhlaví tabulky */
+}
+
+#tabulka td {
+    background-color: var(--first-color);
+    color: #333;
+}
+
+#tabulka tr:nth-child(even) td {
+    background-color: #e6dbd2;
+    /* Střídavé řádky pro lepší čitelnost */
+}
+
+#tabulka td:nth-child(3),
+#tabulka td:nth-child(5) {
+    text-align: right;
+    /* Zarovnání cen a počtu fotografií doprava */
+}
+
+#tabulka tr:hover td {
+    background-color: #AB886D;
+    color: #fff;
+    /* Hover efekt pro zvýraznění řádku */
+}
+
+#tabulka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tabulka h1 {
+    font-size: 2rem;
+    margin: 1.5rem;
+    color: #705947;
+    font-weight: bold;
+}
+
+/* kontakt */
+#kontakt {
+    background-color: var(--sixth-color);
+    color: var(--first-color);
+    min-height: 70vh;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+#kontakt .levyKontakt {
+    margin: 1rem;
+}
+
+#kontakt .formular {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+#kontakt .formular input,
+textarea {
+    width: 30vw;
+    max-width: 500px;
+    padding: 0.5rem;
+    border-radius: 13px;
+    font-size: medium;
+    margin: 0.5rem;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: oblique;
+    resize: none;
+}
+
+#kontakt .zprava textarea {
+    height: 10rem;
+}
+
+#kontakt .submit-button {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--fourth-color);
+    color: var(--first-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    transition: 0.4s ease;
+}
+
+#kontakt .submit-button:hover {
+    background-color: var(--third-color);
+    color: var(--sixth-color);
+    transform: scale(1.03);
+    letter-spacing: 4px;
+}
+
+@media (max-width: 888px) {
+    #navbar .right {
+        display: none;
+    }
+
+    #uvod .uvodniBlok {
+        font-size: 2rem;
+    }
+
+    #uvod .uvodniBlok button {
+        padding: 13px;
+        font-size: 1rem;
+    }
+
+    #oMe {
+        padding: 0;
+        margin: 4rem 0;
+    }
+
+    #oMe .popis {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    #technika {
+        padding: 4rem 0;
+        transition: none;
+    }
+
+    #technika .technikaPopis {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    #technika img {
+        max-height: 40vw;
+        min-height: 40vw;
+    }
+
+    #technika h4 {
+        font-size: 1.4rem;
+    }
+
+    #tabulka table {
+        width: 100%;
+        font-size: 0.6rem;
+    }
+
+    /* kontakt */
+    #kontakt {
+        margin: 0;
+        padding: 4rem 0;
+        flex-direction: column;
+    }
+
+    #kontakt .formular input,
+    textarea {
+        width: 70vw;
+    }
+
+    #kontakt .formular {
+        width: 100%;
+    }
+}
+
+@media (max-height: 670px) {
+    #navbar .right {
+        display: none;
+    }
+
+    #uvod .uvodniBlok {
+        font-size: 3rem;
+    }
+
+    #uvod .uvodniBlok button {
+        padding: 13px;
+        font-size: 1rem;
+    }
+
+    #oMe {
+        padding: 0;
+        margin: 4rem 0;
+    }
+
+    #oMe .popis {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    #oMe .oMeLevo {
+        max-width: 400px;
+    }
+
+    #oMe .oMePravo {
+        max-width: none;
+        min-width: none;
+    }
+
+    #oMe .fotka img {
+        width: 30vh;
+        height: 30vh;
+    }
+
+    #technika {
+        padding: 4rem 0;
+        transition: none;
+    }
+
+    #technika .technikaPopis {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8rem;
+    }
+
+    #technika img {
+        max-height: 25vw;
+        min-height: 25vw;
+    }
+
+    #technika h4 {
+        font-size: 1.4rem;
+    }
+
+    #tabulka table {
+        width: 100%;
+        font-size: 0.6rem;
+    }
+
+    /* kontakt */
+    #kontakt {
+        margin: 0;
+        padding: 4rem 0;
+        flex-direction: column;
+    }
+
+    #kontakt .formular input,
+    textarea {
+        width: 70vw;
+    }
+
+    #kontakt .formular {
+        width: 100%;
+    }
+}
