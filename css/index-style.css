@@ -21,6 +21,7 @@ body {
     height: 100%;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
+    color-scheme: dark;
 }
 
 body {
@@ -332,6 +333,7 @@ img {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
+    color-scheme: light;
 }
 #kontakt .levyKontakt {
     margin: 1rem;
