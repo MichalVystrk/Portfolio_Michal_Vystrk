@@ -22,6 +22,7 @@ body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     color-scheme: dark;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -99,8 +100,6 @@ img {
     background-size: cover;
     background-position: center;
     height: 100vh;
-
-
 }
 
 #uvod .uvodniBlok {
