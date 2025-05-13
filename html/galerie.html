@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index-style.css">
+    <link rel="stylesheet" href="../css/galerie-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="../javascript/galerie.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <h1 class="left">Michal Vystrk</h1>
+        <div class="right">
+            <ul style="text-transform: uppercase;">
+                <li><a href="#uvod"><i class="fas fa-home"></i><span class="nav-text">Domů</span></a></li>
+                <li><a href="#oMe"><i class="fas fa-user"></i><span class="nav-text">O mně</span></a></li>
+                <li><a href="html/galerie.html"><i class="fas fa-camera"></i><span class="nav-text">Portfolio</span></a>
+                </li>
+                <li><a href="#tabulka"><i class="fas fa-money-bill"></i><span class="nav-text">Ceník</span></a></li>
+                <li><a href="#kontakt"><i class="fas fa-envelope"></i><span class="nav-text">Kontakt</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="gallery" id="gallery">
+        <!-- Obrázky budou generovány JS nebo zde -->
+    </div>
+
+    <!-- Lightbox overlay -->
+    <div id="lightbox" class="lightbox" style="display:none;">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+    </div>
+</body>
+
+</html>
