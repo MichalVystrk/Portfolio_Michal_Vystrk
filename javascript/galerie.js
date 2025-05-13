@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         img.src = src;
         img.alt = `Foto ${idx+1}`;
         img.dataset.index = idx;
+        img.loading = "lazy";
         gallery.appendChild(img);
     });
 
