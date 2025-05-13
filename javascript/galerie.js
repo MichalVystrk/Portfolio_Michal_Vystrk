@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Seznam obrázků
+    // Seznam obrázků a náhledů
     const images = [
         "../fotky/portfolio/1.jpg",
         "../fotky/portfolio/2.jpg",
@@ -10,11 +10,21 @@ document.addEventListener("DOMContentLoaded", function () {
         "../fotky/portfolio/7.jpg",
         "../fotky/portfolio/8.jpg"
     ];
+    const thumbnails = [
+        "../fotky/portfolio/thumbnail/1-mini.jpg",
+        "../fotky/portfolio/thumbnail/2-mini.jpg",
+        "../fotky/portfolio/thumbnail/3-mini.jpg",
+        "../fotky/portfolio/thumbnail/4-mini.jpg",
+        "../fotky/portfolio/thumbnail/5-mini.jpg",
+        "../fotky/portfolio/thumbnail/6-mini.jpg",
+        "../fotky/portfolio/thumbnail/7-mini.jpg",
+        "../fotky/portfolio/thumbnail/8-mini.jpg"
+    ];
 
     const gallery = document.getElementById('gallery');
-    images.forEach((src, idx) => {
+    thumbnails.forEach((thumbSrc, idx) => {
         const img = document.createElement('img');
-        img.src = src;
+        img.src = thumbSrc;
         img.alt = `Foto ${idx+1}`;
         img.dataset.index = idx;
         img.loading = "lazy";
@@ -31,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showLightbox(index) {
         currentIndex = index;
-        lightboxImg.src = images[currentIndex];
+        lightboxImg.src = images[currentIndex]; // Načte plný obrázek
         lightbox.style.display = "flex";
     }
 
