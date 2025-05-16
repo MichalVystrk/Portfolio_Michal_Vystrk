@@ -131,7 +131,7 @@ img {
     padding: 2rem;
 }
 
-#uvod button {
+#uvod .galleryButton {
     padding: 1rem 2rem;
     margin-top: 1rem;
     border: none;
@@ -144,7 +144,7 @@ img {
     transition: 0.4s ease;
 }
 
-#uvod button:hover {
+#uvod .galleryButton:hover {
     background-color: var(--third-color);
     color: var(--sixth-color);
     transform: scale(1.1);
